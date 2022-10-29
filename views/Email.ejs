@@ -1,0 +1,31 @@
+<%- include("./Header") -%>
+
+<div class="card">
+    <h1>Email US</h1>
+    
+    <form action="/" method="post" class="row g-3">
+        <div class="col-md-6">
+          <label for="username" class="form-label">Name</label>
+          <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="col-md-6">
+          <label for="companyname" class="form-label">Company</label>
+          <input type="text" class="form-control" id="companyname" name="companyname">
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="col-md-6">
+            <label for="contact" class="form-label">Contact Number</label>
+            <input type="number" class="form-control" id="contact" name="contact">
+        </div>
+        <div class="col-12 form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+    </form>
+</div>
+
+<%- include("./Footer") -%>
